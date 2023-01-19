@@ -1,7 +1,7 @@
 import prettytable
 from functions import *
 
-print("Введите коэффициенты многочлена: ", end='')
+print("Enter the coefficients of the polynomial: ", end='')
 data = input().split()
 odds = [int(data[i]) for i in range(len(data))]
 
@@ -18,9 +18,9 @@ for x in oddN_dividers:
         if possible_roots.count(-r) == 0:
             possible_roots.append(-r)
 
-print("Возможные корни многочлена:", possible_roots, end="\n\n")
+print("Possible roots of the polynomial:", possible_roots, end="\n\n")
 
-print("Схема Горнера.")
+print("Horner's scheme.")
 
 head = ["Possible roots \\ Odds"]
 for i in range(len(data)):
@@ -41,4 +41,4 @@ for x in possible_roots:
         roots.append(x)
 
 print(table, end="\n\n")
-print("Корни:", roots)
+print("Roots:", roots)
