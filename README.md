@@ -1,3 +1,3 @@
-# python-gorner-table
+# horner-scheme-generator
 
-Позволяет составить таблицу Горнера для многочлена (разработано для упрощения жизни студентов).
+Allows you to make a Horner scheme for a polynomial.
